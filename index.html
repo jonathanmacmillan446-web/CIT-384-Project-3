@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jim</title>
+    <meta name="description" content="A small virtual pet game built with JavaScript and jQuery">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- defer waits to run script.js until the whole page (and jQuery below) has loaded -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Meet Jim</h1>
+      <p class="subtitle">Keep Jim happy, swole, and well rested.</p>
+    </header>
+
+    <main>
+      <!-- Pet picture + speech bubble that shows what the pet says after each action -->
+      <section class="pet-image-container">
+        <div class="speech-bubble"></div>
+        <img class="pet-image" src="images/jim.svg" alt="Jim, a cartoon shark wearing a sweatband and holding two dumbbells">
+      </section>
+
+      <!-- Stats and action buttons -->
+      <section class="dashboard">
+        <div class="stat">Name: <strong><span class="name"></span></strong></div>
+        <div class="stat">Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div class="stat">Happiness: <strong><span class="happiness"></span> chomps (per min)</strong></div>
+        <!-- New stat that goes with the new Nap button -->
+        <div class="stat">Energy: <strong><span class="energy"></span> / 100</strong></div>
+        <div class="energy-bar"><div class="energy-fill"></div></div>
+        <div class="stat">Mood: <strong><span class="mood"></span></strong></div>
+
+        <div class="button-container">
+          <button class="treat-button">Treat</button>
+          <button class="play-button">Play</button>
+          <button class="exercise-button">Exercise</button>
+          <!-- New action button -->
+          <button class="nap-button">Nap</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>CIT 384 &middot; Project 2 &middot; Giga Pet JavaScript</p>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>
