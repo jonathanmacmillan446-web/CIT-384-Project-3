@@ -117,7 +117,9 @@ function checkWeightAndHappinessBeforeUpdating() {
     pet_info.energy = 0;
   }
   if (pet_info.energy > maxEnergy) {
-    pet_info.energy == maxEnergy;
+    // Project 3 fix: this line used "==" (compares) instead of "=" (assigns),
+    // so energy was never set back to 100. Found with a breakpoint on the if above.
+    pet_info.energy = maxEnergy;
   }
 }
 
