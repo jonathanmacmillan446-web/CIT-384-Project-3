@@ -78,6 +78,29 @@ footer {
   background-color: #dcd8d3;
 }
 
+/* ---------- Project 3: DevTools Practice section ---------- */
+.devtools-practice {
+  float: left;
+  width: 320px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border: 2px dashed #4a6a87;
+}
+
+.devtools-practice h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #3e5a73;
+}
+
+.devtools-practice p {
+  font-size: 14px;
+  color: #6e6965;
+}
+
 .energy-fill {
   width: 100%;
   height: 12px;
